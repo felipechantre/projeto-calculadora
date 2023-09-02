@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="calculadora.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body id="cl">
+    <h1 class="texto">Calculadora</h1>
+
+    <main id="principal">
+        
+        <div class="container container_superior">
+            <input type="text" name="disp" id="display">
+        </div>
+
+        <div class="container container_inferior">
+            <div class="box box_1"><button class="botao botao_1" onclick="insert('7')">7</button></div>
+            <div class="box box_2"><button class="botao botao_2"onclick="insert('8')">8</button></div>
+            <div class="box box_3"><button class="botao botao_3 " onclick="insert('9')">9</button></div>
+            <div class="box box_4"><button class="botao botao_4" onclick="back()">DEL</button></div>
+
+            <div class="box box_5"><button class="botao botao_5" onclick="insert('4')">4</button></div>
+            <div class="box box_6"><button class="botao botao_6" onclick="insert('5')">5</button></div>
+            <div class="box box_7"><button class="botao botao_7" onclick="insert('6')">6</button></div>
+            <div class="box box_8"><button class="botao botao_8" onclick="insert(' + ')">+</button></div>
+            
+            <div class="box box_9"><button class="botao botao_9" onclick="insert('1')">1</button></div>
+            <div class="box box_10"><button class="botao botao_10" onclick="insert('2')">2</button></div>
+            <div class="box box_11"><button class="botao botao_11" onclick="insert('3')">3</button></div>
+            <div class="box box_12"><button class="botao botao_12" onclick="insert(' - ')">-</button></div>
+            
+            <div class="box box_13"><button class="botao botao_13" onclick="insert('.')">.</button></div>
+            <div class="box box_14"><button class="botao botao_14" onclick="insert('0')">0</button></div>
+            <div class="box box_15"><button class="botao botao_15" onclick="insert(' / ')">/</button></div>
+            <div class="box box_16"><button class="botao botao_16" onclick="insert(' * ')">X</button></div>
+            
+            <div class="box box_17"><button class="botao botao_17" onclick="limpar()">RESET</button></div>
+            <div class="box box_18"><button class="botao botao_18" onclick="resultado()">=</button></div>
+        </div>
+    </main>
+    <div class="checkbox">
+        <h1>Tema</h1>
+        <label class="switch">
+            <input type="checkbox" id="tema">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    
+    
+    <script src="calc.js"></script>
+</body>
+</html>
